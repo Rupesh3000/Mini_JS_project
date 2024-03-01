@@ -22,4 +22,37 @@ nav {
     width: 100%;
     background-color: aqua;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 900;
+   
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .social {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+    }
 }
